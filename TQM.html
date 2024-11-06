@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te quiero</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://raw.githubusercontent.com/HOOMMY/te-quiero/refs/heads/main/cieloo.jpg?token=GHSAT0AAAAAACYOATQVGIU32C4RO2HLPKJCZX7P4XQ');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f0f8ff;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 51, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #f0f8ff;
+            margin-bottom: 20px;
+            font-family: 'Cursive', sans-serif;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        img:first-child {
+            width: 300px;
+            height: auto;
+        }
+
+        img:last-child {
+            width: 150px;
+            height: 150px;
+        }
+
+        img {
+            margin: 15px;
+            border: 5px solid #1e90ff;
+            border-radius: 0;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        button {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block; /* Asegura que el botón se centre */
+            margin-left: auto; /* Centro horizontal */
+            margin-right: auto; /* Centro horizontal */
+        }
+
+        button:hover {
+            background-color: #007acc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Imagen arriba del texto -->
+        <img src="https://raw.githubusercontent.com/HOOMMY/te-quiero/refs/heads/main/UNO.jpg?token=GHSAT0AAAAAACYOATQU3IKEDH6GAW43SW2KZX7P5BQ" alt="Rosa 1">
+
+        <!-- Texto central -->
+        <h1>Te quiero Lucero</h1>
+
+        <!-- Botón para reproducir música -->
+        <button onclick="playAudio()">Reproducir Música</button>
+
+        <!-- Imagen debajo del texto -->
+        <img src="https://raw.githubusercontent.com/HOOMMY/te-quiero/refs/heads/main/rosa.gif?token=GHSAT0AAAAAACYOATQV7GDS3JHORLAI2FSCZX7P43Q" alt="Rosa 2">
+    </div>
+
+    <!-- Música de fondo -->
+    <audio id="myAudio">
+        <source src="https://www.dropbox.com/scl/fi/vupitvqb4v1uogs2wp1ni/Y2meta.app-Carla-Morrison-Disfruto-letra-320-kbps.mp3?rlkey=scij7mnizpiqjmxxd92rmvzml&st=b7bp1va4&dl=1" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
